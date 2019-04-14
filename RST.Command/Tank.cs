@@ -8,6 +8,7 @@ namespace RST.Command
         {
             Console.WriteLine($"Tank is moving");
         }
+        
         public void Fire(FireCommand command)
         {
             Console.WriteLine($"Tank is firing");

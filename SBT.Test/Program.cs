@@ -33,9 +33,9 @@ namespace SBT.Test
         static void Main(string[] args)
         {
             // Команды для юнитов
-            var commands = new List<ICommand> {new FireCommand(), new MoveCommand()};
+            var commands = new List<ICommand> {new FireCommand(), new MoveCommand(), new RotateCommand()};
             // Юниты
-            var units = new List<IUnit> {new Car(), new Tank(), new Fence()};
+            var units = new List<IUnit> {new Car(), new Tank(), new Fence(), new Helicopter()};
 
             // Вариант 1: для каждой команды вызвать её исполнение на каждом юните.
             foreach (var command in commands)
