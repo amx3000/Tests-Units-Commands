@@ -1,10 +1,12 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace RST.Command
 {
-    public class Car: IUnit
+    public class Car : IUnit, ISupportMove
     {
+        public void Move(MoveCommand command)
+        {
+            Console.WriteLine($"Car is moving");
+        }
     }
 }
